@@ -53,6 +53,7 @@ import com.android.settings.intelligence.search.SearchFeatureProvider;
 import com.android.settings.intelligence.search.SearchResult;
 import com.android.settings.intelligence.search.indexing.IndexingCallback;
 import com.android.settings.intelligence.search.savedqueries.car.CarSavedQueryController;
+import com.android.settings.intelligence.search.savedqueries.car.CarSavedQueryViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -336,7 +337,7 @@ public class CarSearchFragment extends PreferenceFragment implements
             }
         }
 
-        if (mRecyclerView != null && !mRecyclerView.hasFocus()) {
+        if (mRecyclerView != null) {
             mRecyclerView.requestFocus();
         }
     }
